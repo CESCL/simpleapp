@@ -3,7 +3,7 @@
 
 # This is a simple code in python of a program that count lines in a file called text.txt.
 
-# Simple function to count lines
+# Function to count lines
 def count_lines(file):
     file.seek(0)  # Ensure you're at the start of the file. Addedd also in feature-y development. 
     return sum(1 for line in file)
@@ -22,9 +22,9 @@ def count_words(file):
 filename = 'text.txt'
 with open(filename, 'r') as file:
     line_count = count_lines(file)
-    byte_count = count_bytes(file)
     word_count = count_words(file)
+    byte_count = count_bytes(file)
     
-print(f"The number of lines in the file is: {line_count}")
-print(f"The number of bytes in the file is: {byte_count}")
-print(f"The number of words in the file is: {word_count}")
+# Modified print statement for feature-z # Modified to merge with master in the conflict resolution. 
+print(f"[Feature Z] The file '{filename}' has {line_count} lines, {word_count} words and {byte_count} bytes.")
+# This is the final version of the code merged into master
