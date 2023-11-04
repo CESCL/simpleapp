@@ -63,12 +63,16 @@ git remote add origin git@github.com:CESCL/aubenops.git
 The number of lines in the file is: 8
 The number of words in the file is: 182
 
-10. Checkout feature-y and modify the source file. In feature-x a byte count feature is addedd to the main.py file. 
+10. Checkout feature-y and modify the source file. In feature-y a byte count feature is addedd to the main.py file. 
 mor
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git checkout -b feature-y
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py
 The number of lines in the file is: 8
 The number of bytes in the file is: 1155
 
-11. Modify the source file and checkout feature-z. In feature-x a count words feature is addedd to the main.py file. 
-mor
+11. Checkout feature-y and modify the source file. In feature-z includes the same word and line count but shows a different message.
+
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git checkout -b feature-z
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py      
+[Feature Z] The file 'text.txt' has 8 lines and 182 words.
+
