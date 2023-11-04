@@ -76,3 +76,6 @@ The number of bytes in the file is: 1155
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py      
 [Feature Z] The file 'text.txt' has 8 lines and 182 words.
 
+12. Checkout to master and pull from the github to local repository. 
+git checkout master
+git pull origin master
