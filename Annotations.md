@@ -56,12 +56,19 @@ git remote add origin git@github.com:CESCL/aubenops.git
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git branch feature-y
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git branch feature-z
 
-9. Modify the source file and checkout feature-x. In feature-x a count words feature is addedd to the main.py file. 
+9. Checkout feature-x and modify the source file. In feature-x a word count feature is addedd to the main.py file. 
 
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git checkout -b feature-x
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py
 The number of lines in the file is: 8
 The number of words in the file is: 182
 
-10. Modify the source file and checkout feature-x. In feature-x a count words feature is addedd to the main.py file. 
+10. Checkout feature-y and modify the source file. In feature-x a byte count feature is addedd to the main.py file. 
+mor
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git checkout -b feature-y
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py
+The number of lines in the file is: 8
+The number of bytes in the file is: 1155
+
+11. Modify the source file and checkout feature-z. In feature-x a count words feature is addedd to the main.py file. 
 mor
