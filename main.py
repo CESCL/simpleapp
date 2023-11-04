@@ -5,11 +5,19 @@
 
 # Simple function to count lines
 def count_lines(file):
+    file.seek(0)  # Reset file pointer to the start added in feature-x
     return sum(1 for line in file)
+
+# Function to count words
+def count_words(file):
+    file.seek(0)  # Reset file pointer to the start added in feature-x
+    return sum(len(line.split()) for line in file)
 
 # Main execution
 filename = 'text.txt'
 with open(filename, 'r') as file:
     line_count = count_lines(file)
+    word_count = count_words(file)
 
 print(f"The number of lines in the file is: {line_count}")
+print(f"The number of words in the file is: {word_count}")
