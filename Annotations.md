@@ -1,5 +1,5 @@
 1. Create a new directory - local.
-2. Develop the main.py and text.txt 
+2. Develop the main.py, text.txt, annotations may become the readme.md in the future. 
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> ls 
 
 
@@ -49,3 +49,19 @@ git remote add origin git@github.com:CESCL/aubenops.git
  create mode 100644 Annotations.md
  create mode 100644 main.py
  create mode 100644 text.txt
+
+8. Create 3 different branches. 
+
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git branch feature-x
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git branch feature-y
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git branch feature-z
+
+9. Modify the source file and checkout feature-x. In feature-x a count words feature is addedd to the main.py file. 
+
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git checkout -b feature-x
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> python .\main.py
+The number of lines in the file is: 8
+The number of words in the file is: 182
+
+10. Modify the source file and checkout feature-x. In feature-x a count words feature is addedd to the main.py file. 
+mor
