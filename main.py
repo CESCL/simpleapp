@@ -5,11 +5,19 @@
 
 # Simple function to count lines
 def count_lines(file):
+    file.seek(0)  # Ensure you're at the start of the file. Addedd also in feature-y development. 
     return sum(1 for line in file)
+
+# Function to count bytes
+def count_bytes(file):
+    file.seek(0)  # Ensure you're at the start of the file. Addedd also in feature-y development. 
+    return len(file.read())
 
 # Main execution
 filename = 'text.txt'
 with open(filename, 'r') as file:
     line_count = count_lines(file)
+    byte_count = count_bytes(file)
 
 print(f"The number of lines in the file is: {line_count}")
+print(f"The number of bytes in the file is: {byte_count}")
