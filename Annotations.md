@@ -8,6 +8,7 @@
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
+-a----         11/4/2023   8:53 PM           2153 Annotations.md
 -a----         11/4/2023   7:23 PM            451 main.py
 -a----         11/4/2023   7:28 PM           1162 text.txt
 
@@ -21,7 +22,30 @@ The number of lines in the file is: 8
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git --version
 git version 2.42.0.windows.1
 
-5. Initialize Git and Push to GitHub
+5. Configure credentials for the github.
+git config --global user.name "Carlos Escalona"
+git config --global user.email "carlos.armando.escalona@gmail.com"
+
+6. Include the public key in the deploy key.
+#Generate a public key.
+ssh-keygen -t rsa -b 4096 -C "carlos.armando.escalona@gmail.com"
+type id_rsa.pub
+#Add the public key in the deploy key on github.
+#Validate SSH authentication. 
+(myenv) PS C:\Users\Carlos Escalona\.ssh> ssh -T git@github.com              
+Hi CESCL/simpleapp! You've successfully authenticated, but GitHub does not provide shell access.
+
+7. Initialize Git, add GitHub repository as a remote, commit and push the code. 
 
 (myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git init
 Initialized empty Git repository in C:/Users/Carlos Escalona/code/1_UoT/dot503/Assessment2/.git/
+
+git remote add origin git@github.com:CESCL/aubenops.git
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git remote add origin git@github.com:CESCL/simpleapp.git
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git add .
+(myenv) PS C:\Users\Carlos Escalona\code\1_UoT\dot503\Assessment2> git commit -m "Initial commit"
+[master (root-commit) 393d244] Initial commit
+ 3 files changed, 50 insertions(+)
+ create mode 100644 Annotations.md
+ create mode 100644 main.py
+ create mode 100644 text.txt
