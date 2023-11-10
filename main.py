@@ -27,4 +27,4 @@ with open(filename, 'r') as file:
     
 # Modified print statement for feature-z # Modified to merge with master in the conflict resolution. 
 print(f"[Feature Z] The file '{filename}' has {line_count} lines, {word_count} words and {byte_count} bytes.")
-# This is the final version of the code merged into master
+# This is the final version of the code merged into masterq
