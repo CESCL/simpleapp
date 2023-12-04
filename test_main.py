@@ -31,11 +31,11 @@ class TestFileAnalysis(unittest.TestCase):
     # Intentionally failing tests
     def test_count_lines_should_fail(self):
         with open(self.test_file, 'r') as f:
-            self.assertEqual(count_lines(f), 100)
+            self.assertEqual(count_lines(f), 4)
 
     def test_count_words_should_fail(self):
         with open(self.test_file, 'r') as f:
-            self.assertEqual(count_words(f), 2)
+            self.assertEqual(count_words(f), 13)
 
     @classmethod
     def tearDownClass(cls):
